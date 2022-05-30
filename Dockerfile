@@ -12,25 +12,25 @@ RUN git config --global user.name "ashwinstr"
 
 # set timezone 
 
- ENV TZ=Asia/Kolkata 
+
 
   
+
+
+
+
+
+
+
+
+
+ 
+
+ # cloning the repo and installing requirements.
 
  
 
 
-
-
-
- RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone 
-
-  
-
- # cloning the repo and installing requirements.
-
- RUN if [ $BRANCH ]; then git clone -b $BRANCH $REPO $DIR; else git clone 
-
- RUN pip3 install --no-cache-dir -r $DIR/requirements.txt && pip3 install av --no-binary av
 
 # Okteto CLI 
 
