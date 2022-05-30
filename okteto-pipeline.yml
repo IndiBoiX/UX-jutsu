@@ -1,0 +1,5 @@
+icon: https://camo.githubusercontent.com/c347bced3a027a770c620017e93ffc4ac81c3f5669ad39baeead7d1e3e87d3f9/68747470733a2f2f74656c656772612e70682f66696c652f3037666436633832303437393933636532343461322e706e67
+
+deploy:
+
+    - okteto stack deploy --build -f docker-compose.yml
