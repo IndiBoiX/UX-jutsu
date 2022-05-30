@@ -28,7 +28,7 @@ RUN git config --global user.name "ashwinstr"
 
  # cloning the repo and installing requirements.
 
- RUN if [ $BRANCH ]; then git clone -b $BRANCH $REPO $DIR; else git clone $REPO $DIR; fi 
+ RUN if [ $BRANCH ]; then git clone -b $BRANCH $REPO $DIR; else git clone 
 
  RUN pip3 install --no-cache-dir -r $DIR/requirements.txt && pip3 install av --no-binary av
 
